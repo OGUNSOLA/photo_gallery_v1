@@ -1,8 +1,8 @@
 var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
 var $caption = $('<p></p>');
-var $nextImage = $('<img>');
-var $prevImage = $('<img>');
+var thisImage;
+var ok;
 
 $overlay.append($image);
 
@@ -35,18 +35,23 @@ function theCurrentImage (currentImage){
 
 
 $('.next').click(function() {
-	$nextImage= thisImage.nextElementSibling;
-	 $overlay.detach($image);
-	 $overlay.attach($nextImage);
+	theParent= $(thisImage).parent().next();
+	if (theParent.length!=0){
+		ok=$(theParent).children('a')
+	}
+	theCurrentImage(ok); 
+
 });
 
 
 
 
 $('.previous').click(function() {
-	$prevImage= thisImage.previousElementSibling;
-	 $overlay.detach($image);
-	 $overlay.attach($prevImage); 
+	theParent= $(thisImage).parent().prev();
+	if (theParent.length!=0){
+		ok=$(theParent).children('a')
+	}
+	theCurrentImage(ok); 
 });
 
 
