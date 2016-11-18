@@ -2,40 +2,40 @@
 <html>
 <head>
 
-	<link rel="stylesheet" href="css/normalize.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 	<title>Photo Gallery</title>
 	<meta  id="viewport" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
 </head>
 <body>
 	<div class="container">
 		<h1>My Photo Gallery</h1>
-		<input id="search" name="search" placeholder="Start typing here" type="text" data-list=".list">
+		<input id="search" name="search" type="text" placeholder="seach here" data-list=".list">
 		<div class="gallery">
 			<ul class="list">
-					<li><a href="Photos/01.jpg" title="hay bales"><img src="Photos/Thumbnails/01.jpg" alt="Hay Bales
+					<li title="hay bales"><a href="Photos/01.jpg" ><img src="Photos/Thumbnails/01.jpg" alt="Hay Bales
 					I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a></li>
-					<li><a href="Photos/02.jpg" title="lake"><img src="Photos/Thumbnails/02.jpg" alt="Lake
+					<li title="lake"><a href="Photos/02.jpg" ><img src="Photos/Thumbnails/02.jpg" alt="Lake
 					The lake was so calm today. We had a great view of the snow on the mountains from here."></a></li>
-					<li><a href="Photos/03.jpg" title="canyon"><img src="Photos/Thumbnails/03.jpg" alt="Canyon
+					<li title="canyon"><a href="Photos/03.jpg" ><img src="Photos/Thumbnails/03.jpg" alt="Canyon
 					I hiked to the top of the mountain and got this picture of the canyon and trees below."></a></li>
-					<li><a href="Photos/04.jpg" title="iceberg"><img src="Photos/Thumbnails/04.jpg" alt="Iceberg
-					It was amazing to see an iceberg up close, it was so cold but didn&#39t snow today."></a></li>
-					<li><a href="Photos/05.jpg" title="desert"><img src="Photos/Thumbnails/05.jpg" alt="Desert
+					<li title="iceberg"><a href="Photos/04.jpg" ><img src="Photos/Thumbnails/04.jpg" alt="Iceberg
+					It was amazing to see an iceberg up close, it was so cold but did not snow today."></a></li>
+					<li title="desert"><a href="Photos/05.jpg" ><img src="Photos/Thumbnails/05.jpg" alt="Desert
 					The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a></li>
-					<li><a href="Photos/06.jpg" title="Fall"><img src="Photos/Thumbnails/06.jpg" alt="Fall
+					<li title="Fall"><a href="Photos/06.jpg" ><img src="Photos/Thumbnails/06.jpg" alt="Fall
 					Fall is coming, I love when the leaves on the trees start to change color."></a></li>
-					<li><a href="Photos/07.jpg" title="plantation"><img src="Photos/Thumbnails/07.jpg" alt="Plantation
+					<li title="plantation"><a href="Photos/07.jpg" ><img src="Photos/Thumbnails/07.jpg" alt="Plantation
 					I drove past this plantation yesterday, everything is so green!"></a></li>
-					<li><a href="Photos/08.jpg" title="dunes"><img src="Photos/Thumbnails/08.jpg" alt="Dunes
+					<li title="dunes"><a href="Photos/08.jpg" ><img src="Photos/Thumbnails/08.jpg" alt="Dunes
 					My summer vacation to the Oregon Coast. I love the sandy dunes!"></a></li>
-					<li><a href="Photos/09.jpg" title="countryside"><img src="Photos/Thumbnails/09.jpg" alt="Countryside Lane
+					<li title="countryside"><a href="Photos/09.jpg" ><img src="Photos/Thumbnails/09.jpg" alt="Countryside Lane
 					We enjoyed a quiet stroll down this countryside lane. "></a></li>
-					<li><a href="Photos/10.jpg" title="Sunset"><img src="Photos/Thumbnails/10.jpg" alt="Sunset
+					<li title="Sunset"><a href="Photos/10.jpg" ><img src="Photos/Thumbnails/10.jpg" alt="Sunset
 					Sunset at the coast! The sky turned a lovely shade of orange."></a></li>
-					<li><a href="Photos/11.jpg" title="cave"><img src="Photos/Thumbnails/11.jpg" alt="Cave
+					<li title="cave"><a href="Photos/11.jpg" ><img src="Photos/Thumbnails/11.jpg" alt="Cave
 					I did a tour of a cave today and the view of the landscape below was breathtaking."></a></li>
-					<li><a href="Photos/12.jpg" title="snow"><img src="Photos/Thumbnails/12.jpg" alt="Bluebells
+					<li title="snow"><a href="Photos/12.jpg" ><img src="Photos/Thumbnails/12.jpg" alt="Bluebells
 					I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a></li>
 			</ul>
 		</div>
@@ -52,9 +52,10 @@
 		<script type="text/javascript" src="js/jquery.hideseek.min.js"></script>
 		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-				$(document).ready(function() {
-				$('#search').hideseek();
-				});
+				$('#search').hideseek({
+              		attribute: 'title'
+            });
 	 	</script>
+	</div> 	
 </body>
 </html>
