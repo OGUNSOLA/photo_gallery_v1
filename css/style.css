@@ -6,6 +6,14 @@ body {
   text-align:center;
 }
 
+#home {
+  position: fixed;
+  text-decoration: none;
+  left: 15%;
+  top: 50px;
+  color: white;
+  font-weight: bolder;
+}
 
 h1 {
 	text-align:center;
